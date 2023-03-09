@@ -1,0 +1,6 @@
+SELECT toStartOfMonth(toDateTime(time)) AS __timestamp,
+       COUNT(DISTINCT user_id) AS "Unique users"
+FROM simulator_20230120.feed_actions
+GROUP BY toStartOfMonth(toDateTime(time))
+ORDER BY "Unique users" DESC
+LIMIT 50000;
