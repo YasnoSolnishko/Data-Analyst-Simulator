@@ -21,6 +21,6 @@ Finally, the dashboard features filtering cells that allow users to filter the d
 
 ## Dashboard 3 - Feed and messenger data
 The dashboard features three KPIs, each with a sparkline diagram that shows the trend over time and the percentage change compared to the previous day's data. The first KPI tracks the number of unique feed users, while the second KPI tracks the number of unique messenger users. The third KPI tracks the number of unique users who use both the messenger and feed features, providing valuable insights into how users engage with the platform.
-![](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/1_Dashboards/feed-and-messages-2023-03-06T12-23.jpg)
 
 Additionally, the dashboard features two diagrams that show the number of unique daily active users (DAUs) who use both the feed and messenger features and the number of unique users who use the feed feature exclusively. 
+![](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/1_Dashboards/feed-and-messages-2023-03-06T12-23.jpg)
