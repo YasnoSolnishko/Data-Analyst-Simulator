@@ -1,0 +1,8 @@
+SELECT toDateTime(intDiv(toUInt32(toDateTime(time)), 600)*600) AS __timestamp,
+       count(DISTINCT user_id) AS "Unique users"
+FROM simulator_20230120.feed_actions
+WHERE time >= toDateTime('2023-03-09 00:00:00')
+  AND time < toDateTime('2023-03-10 00:00:00')
+GROUP BY toDateTime(intDiv(toUInt32(toDateTime(time)), 600)*600)
+ORDER BY "Unique users" DESC
+LIMIT 50000;
