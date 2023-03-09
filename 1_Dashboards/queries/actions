@@ -1,0 +1,12 @@
+SELECT toStartOfDay(toDateTime(time)) AS __timestamp,
+       action AS action,
+       os AS os,
+       count(post_id) AS "COUNT(post_id)"
+FROM simulator_20230120.feed_actions
+WHERE time >= toDateTime('2023-02-01 00:00:00')
+  AND time < toDateTime('2023-03-01 00:00:00')
+GROUP BY action,
+         os,
+         toStartOfDay(toDateTime(time))
+ORDER BY "COUNT(post_id)" DESC
+LIMIT 50000;
