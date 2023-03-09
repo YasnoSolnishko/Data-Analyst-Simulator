@@ -1,0 +1,11 @@
+SELECT post_id AS post_id,
+       countIf(action = 'view') AS "Views",
+       countIf(action = 'like') AS "Likes",
+       countIf(action = 'like') / countIf(action = 'view') AS "CTR",
+       count(DISTINCT user_id) AS coverage
+FROM simulator_20230120.feed_actions
+WHERE time >= toDateTime('2023-03-09 00:00:00')
+  AND time < toDateTime('2023-03-10 00:00:00')
+GROUP BY post_id
+ORDER BY "Views" DESC
+LIMIT 10;
