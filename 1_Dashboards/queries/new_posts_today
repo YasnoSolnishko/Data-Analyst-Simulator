@@ -1,0 +1,9 @@
+SELECT toStartOfDay(toDateTime(date)) AS __timestamp,
+       count(post_id) AS "COUNT(post_id)"
+FROM
+  (SELECT post_id,
+          min(toDate(time)) as date
+   FROM simulator_20230120.feed_actions
+   group by post_id) AS virtual_table
+GROUP BY toStartOfDay(toDateTime(date))
+LIMIT 50000;
