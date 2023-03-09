@@ -1,0 +1,11 @@
+SELECT toStartOfDay(toDateTime(time)) AS __timestamp,
+       count(DISTINCT user_id) AS "DAU"
+FROM
+  (SELECT *
+   FROM simulator_20230120.feed_actions
+   WHERE user_id NOT IN
+       (SELECT user_id
+        FROM simulator_20230120.message_actions)) AS virtual_table
+GROUP BY toStartOfDay(toDateTime(time))
+ORDER BY "DAU" DESC
+LIMIT 1000;
