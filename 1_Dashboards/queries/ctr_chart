@@ -1,0 +1,10 @@
+SELECT toStartOfDay(toDateTime(time)) AS __timestamp,
+       os AS os,
+       countIf(user_id, action='like') / countIf(user_id, action='view') AS "CTR"
+FROM simulator_20230120.feed_actions
+WHERE time >= toDateTime('2023-02-01 00:00:00')
+  AND time < toDateTime('2023-03-01 00:00:00')
+GROUP BY os,
+         toStartOfDay(toDateTime(time))
+ORDER BY "CTR" DESC
+LIMIT 50000;
