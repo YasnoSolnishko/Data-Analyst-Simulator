@@ -1,0 +1,8 @@
+SELECT count(DISTINCT user_id) AS "COUNT_DISTINCT(user_id)"
+FROM
+  (SELECT user_id
+   FROM simulator_20230120.feed_actions
+   WHERE user_id NOT IN
+       (SELECT user_id
+        FROM simulator_20230120.message_actions)
+   GROUP BY user_id) AS virtual_table;
