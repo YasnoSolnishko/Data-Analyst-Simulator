@@ -1,0 +1,10 @@
+SELECT age AS age,
+       count(DISTINCT user_id) AS "Users",
+       count(action) AS "Total actions",
+       countIf(user_id, action='like') / countIf(user_id, action='view') AS "CTR"
+FROM simulator_20230120.feed_actions
+WHERE time >= toDateTime('2023-03-09 00:00:00')
+  AND time < toDateTime('2023-03-10 00:00:00')
+GROUP BY age
+ORDER BY "Users" DESC
+LIMIT 10;
