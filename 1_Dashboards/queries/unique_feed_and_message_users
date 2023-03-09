@@ -1,0 +1,8 @@
+SELECT toStartOfDay(toDateTime(time)) AS __timestamp,
+       count(DISTINCT user_id) AS "COUNT_DISTINCT(user_id)"
+FROM
+  (SELECT *
+   FROM simulator_20230120.message_actions
+   INNER JOIN simulator_20230120.feed_actions USING user_id) AS virtual_table
+GROUP BY toStartOfDay(toDateTime(time))
+LIMIT 50000;
