@@ -26,3 +26,6 @@ The breakdown is by OS, gender, and age.
 The table should be loaded into the test schema.
 
 ## Result
+The tasks finished ([link]())  
+The screenshot of result table is below.
+![](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/4_Building_ETL_pipeline/etl_result.png)
