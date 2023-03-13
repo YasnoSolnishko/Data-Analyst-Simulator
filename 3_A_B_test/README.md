@@ -45,7 +45,7 @@ The results look messy; some t-tests show the difference in mean CTRs, and other
 Mann-Whitney test shows that the distribution is different, but that is obvious if one looks at the diagrams of CTR distributions. It seems like that for some users new algorithm increased CTR, and for others decreased it. 
 Poisson bootstrap shows a difference between the average CTRs. Since the bootstrap is the simulation of the "general population", it could mean that there is a real difference between average CTRs, but we do not have enough data to access it correctly.
 #### Recommendations
-In such an unclear situation, I would not recommend implementing the algorithm which was used for group 2 in AB-test. 
+In such an unclear situation, **I do not recommend implementing the algorithm** which was used for group 2 in AB-test. 
 
-However, the data could be used to investigate the groups inside group 2 to identify if there is any correlation between the people for which CTR increased/decreased. For example, for people younger than 30, the new algorithm increases CTR, but for those older than 30, vice versa.
+**However, the data could be used to investigate the groups inside group 2 to identify if there is any correlation between the people for which CTR increased/decreased**. For example, for people younger than 30, the new algorithm increases CTR, but for those older than 30, vice versa.
 And if this hypothesis is confirmed, the new algorithm could be implemented for the corresponding group.
