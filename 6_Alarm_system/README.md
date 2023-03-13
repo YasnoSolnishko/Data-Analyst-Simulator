@@ -24,3 +24,9 @@ Current value {current_x}. Deviation more than {x}%.
 3. Create a DAG there - it should be in a .py format file
 4. Push the result (don't forget to pull all the fresh changes to avoid deleting your colleagues' folders!)
 5. Enable the DAG when it appears in Airflow
+
+## Results
+Python script for Airflow, that works as an Alarm System.([link](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/6_Alarm_system/alerts_dag_khudokormov.py))
+
+Alarm screenshots from telegram bot:
+<>
