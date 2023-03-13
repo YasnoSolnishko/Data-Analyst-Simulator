@@ -22,3 +22,13 @@ It's time to automate the basic reporting for our application. Let's set up the 
 6. The report should arrive daily at 11:00 am in the chat.
 
 ## Results
+Airflow script is created and working as it should ([link](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/5_Report_automatization/feed_report_dag_khudokormov.py))
+Dag image  
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/5_Report_automatization/feed_report_dag.png" width="600">
+
+Report example screenshots  
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/5_Report_automatization/report_pics/feed_report_1.png" width="600">  
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/5_Report_automatization/report_pics/feed_report_2.png" width="600">
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/5_Report_automatization/report_pics/feed_report_3.png" width="600">
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/5_Report_automatization/report_pics/feed_report_4.png" width="600">
+
