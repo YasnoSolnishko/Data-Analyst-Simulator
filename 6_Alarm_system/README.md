@@ -29,4 +29,5 @@ Current value {current_x}. Deviation more than {x}%.
 Python script for Airflow, that works as an Alarm System.([link](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/6_Alarm_system/alerts_dag_khudokormov.py))
 
 Alarm screenshots from telegram bot:
-<>
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/6_Alarm_system/images/alarms_1.png" width="600">  
+<img src="https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/6_Alarm_system/images/alarms_2.png" width="600">  
