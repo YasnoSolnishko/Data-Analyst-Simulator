@@ -26,6 +26,7 @@ The breakdown is by OS, gender, and age.
 The table should be loaded into the test schema.
 
 ## Result
-The tasks finished ([link]())  
-The screenshot of result table is below.
+The tasks finished (script by the [link](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/4_Building_ETL_pipeline/etl_pipeline.py))
+The screenshots of DAG in Airflow and result table are below.
+![](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/4_Building_ETL_pipeline/dag_etl_pipeline.png)
 ![](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/4_Building_ETL_pipeline/etl_result.png)
