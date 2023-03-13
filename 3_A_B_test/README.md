@@ -49,3 +49,39 @@ In such an unclear situation, **I do not recommend implementing the algorithm** 
 
 **However, the data could be used to investigate the groups inside group 2 to identify if there is any correlation between the people for which CTR increased/decreased**. For example, for people younger than 30, the new algorithm increases CTR, but for those older than 30, vice versa.
 And if this hypothesis is confirmed, the new algorithm could be implemented for the corresponding group.
+
+## A/B test (linear)
+
+The list of methods that can be applied to ratio metrics discussed during the lecture is not exhaustive. There are a huge number of useful materials on this topic. Let's start with the [materials](https://vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f#d2d3) by Nikita Marshallkin. By the way, [here](https://www.youtube.com/watch?v=gljfGAkgX_o&t=19s) is his interview, which is also very interesting.
+
+Relatively recently (in 2018), researchers from Yandex developed a cool method for analyzing tests on ratio metrics (just like ours) of the form 𝑥𝑦 (ours is $\frac{clicks}{likes}$).
+
+The idea of the method is as follows:
+
+Instead of pushing "per-user" CTR into the test, we can construct another metric and analyze it, but at the same time, unlike smoothed CTR, it is guaranteed that if the test on this other metric "colors" and sees changes, then changes also exist in the original metric (i.e., in likes per user and in user CTR).
+
+At the same time, the method itself is very simple. What kind of metric is this?
+
+* Calculate the overall CTR in the control group: $CTRcontrol=sum(likes)/sum(views)$
+* Calculate the per-user metric in both groups: $linearized\_likes=likes-CTRcontrol*views$
+* Then compare the differences in groups using a t-test based on the metric $linearized\_likes$  
+
+The method is simple, and it is guaranteed that with a decent sample size (which is suitable for us), you can freely increase the sensitivity of your metric (or at least not make it worse). As for me, this is VERY cool.
+
+### Task
+
+1. Analyze the test between groups 0 and 3 based on the linearized likes metric. Is there a difference? Did 𝑝-value become smaller?
+2. Analyze the test between groups 1 and 2 based on the linearized likes metric. Is there a difference? Did 𝑝-value become smaller? 
+
+### Result
+The test is done([link](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/blob/main/3_A_B_test/AB_test_linear.ipynb))
+#### Conclusions
+Analyzing the linearized CTR for groups 0 and 3:
+* visually, there is no difference between distributions and averages;
+* t-test p-value is almost 1, and that means that there is no difference between means;
+* Mann-Whitney p-value is above 0,05, which confirms that distributions are equal.
+
+Analyzing the linearized CTR for groups 1 and 2:
+* visually, there is a difference between distributions, but the averages look the same;
+* t-test p-value is almost 1, and that means that there is no difference between means;
+* Mann-Whitney p-value is way below 0,05, which confirms that distributions are unequal.
