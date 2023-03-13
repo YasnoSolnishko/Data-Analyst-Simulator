@@ -1,9 +1,9 @@
 # Karpov Courses Data Analyst Simulator
 ## Description
-Data Analyst Simulator is a comprehensive repository containing practical tasks completed during the Karpov Courses [Data Analyst Simulator](https://karpov-courses.translate.goog/simulator?_x_tr_sl=auto&_x_tr_tl=en) course. The course offers a simulation of real job conditions, enabling students to build and automate analytical processes from scratch.
+Data Analyst Simulator is a comprehensive repository containing practical tasks completed during the internship in Karpov Courses. During the internship I  built and automated analytical processes from scratch.
 
-## Scenario
-I'm an intern data analyst at a startup that lacks an analytic process. The company's product is an app that offers a news feed and messaging capabilities. Your objective is to establish and automate analytical processes from the ground up.
+## The goal
+The company's product is an app that offers a news feed and messaging capabilities. My objective is to establish and automate analytical processes from the ground up.
 
 ## Analytical tools
 The repository contains various analytical tools created for this project, including dashboards, daily reports, alarms reports, metrics analysis, and A/B tests.
@@ -31,8 +31,6 @@ The following tools were used during the project:
 * [Jupyter Lab](https://jupyter.org/try)  
 * [Airflow](https://airflow.apache.org/)  
 * [GitLab](https://about.gitlab.com/)
-
-By exploring the Data Analyst Simulator repository, you'll gain practical insights into building and automating analytical processes from scratch, making you better equipped to handle real-world scenarios as a data analyst.
 
 🕺 The course is successfully finished.
 The certificate can be obtained by the [link](https://lab.karpov.courses/certificate/c25b9014-b9c2-440b-9195-7f12ad3ef54b/en/)
