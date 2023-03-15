@@ -9,13 +9,12 @@ The company's product is an app that offers a news feed and messaging capabiliti
 The repository contains various analytical tools created for this project, including dashboards, daily reports, alarms reports, metrics analysis, and A/B tests.
 
 ### TOC:
-Task 1 - [Create dashboards](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/1_Dashboards)  
-Task 2 - [Product Metrics Analysis]  
-Task 3 - [A/B tests]  
-Task 4 - [Build ETL pipeline]  
-Task 5 - [Reporting automatization]  
-Task 6 - [Create alarm system]  
-Task 7 - [Practical tasks]  
+Project 1 - [Create dashboards](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/1_Dashboards)  
+Project 2 - [Product Metrics Analysis](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/2_Product_metrics)  
+Project 3 - [A/B tests](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/3_A_B_test)  
+Project 4 - [Build ETL pipeline](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/4_Building_ETL_pipeline)  
+Project 5 - [Reporting automatization](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/5_Report_automatization)  
+Project 6 - [Create alarm system](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/6_Alarm_system)  
 
 ## Stack
 The project leverages the following tools and technologies:
