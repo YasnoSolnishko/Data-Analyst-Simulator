@@ -20,7 +20,7 @@ Project 6 - [Create alarm system](https://github.com/YasnoSolnishko/Data-Analyst
 The project leverages the following tools and technologies:
 * SQL;
 * Clickhouse;
-* Python;
+* Python (Pandas, Seaborn, Matplotlib, Numpy);
 * Git;
 
 ## Additional Tools:
