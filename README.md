@@ -1,12 +1,12 @@
 # Karpov Courses Data Analyst Simulator
 ## Description
-Data Analyst Simulator is a comprehensive repository containing practical tasks completed during the internship in Karpov Courses. During the internship I  built and automated analytical processes from scratch.
+Data Analyst Simulator is a comprehensive repository containing practical tasks completed during the internship in Karpov Courses. During the internship, I  built and automated analytical processes from scratch.
 
 ## The goal
-The company's product is an app that offers a news feed and messaging capabilities. My objective is to establish and automate analytical processes from the ground up.
+My objective is to establish and automate analytical processes from the ground up. The company's product is an app that offers a news feed and messaging capabilities.  
 
 ## Analytical tools
-The repository contains various analytical tools created for this project, including dashboards, daily reports, alarms reports, metrics analysis, and A/B tests.
+The repository contains various analytical tools created for this project, including dashboards, daily reports, alarm reports, metrics analysis, and A/B tests. Since the data is live, I provided screenshots of task completion.
 
 ### TOC:
 Project 1 - [Create dashboards](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/1_Dashboards)  
@@ -24,7 +24,7 @@ The project leverages the following tools and technologies:
 * Git;
 
 ## Additional Tools:
-The following tools were used during the project:  
+I used following tools during the project:  
 * [Redash](https://redash.io/)   
 * [Apache Superset](https://superset.apache.org/)  
 * [Jupyter Lab](https://jupyter.org/try)  
