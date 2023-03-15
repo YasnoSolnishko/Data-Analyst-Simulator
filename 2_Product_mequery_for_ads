@@ -1,0 +1,18 @@
+SELECT date AS date,
+       start_date AS start_date,
+       max(users) AS "users"
+FROM
+  (WITH user_start_date AS
+     (SELECT user_id,
+             toDate(time) date, MIN(toDate(time)) OVER(PARTITION BY user_id) start_date
+      FROM simulator_20230120.feed_actions
+      WHERE source = 'ads' ),
+        cohorts AS
+     (SELECT start_date, date, COUNT(DISTINCT user_id) users
+      FROM user_start_date
+      GROUP BY start_date, date
+      HAVING start_date >= today() - 20) SELECT toString(start_date) start_date,
+                                                toString(date) date, users
+   FROM cohorts
+   ORDER BY start_date, date) AS virtual_table
+GROUP BY date, start_date
