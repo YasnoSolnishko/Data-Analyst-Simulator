@@ -9,7 +9,7 @@ My objective is to establish and automate analytical processes from the ground u
 The repository contains various analytical tools created for this project, including dashboards, daily reports, alarm reports, metrics analysis, and A/B tests. Since the data is live, I provided screenshots of task completion.
 
 ### TOC:
-Project 1 - [Create dashboards](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/1_Dashboards)  
+Project 1 - [Dashboards](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/1_Dashboards)  
 Project 2 - [Product Metrics Analysis](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/2_Product_metrics)  
 Project 3 - [A/B tests](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/3_A_B_test)  
 Project 4 - [Build ETL pipeline](https://github.com/YasnoSolnishko/Data-Analyst-Simulator/tree/main/4_Building_ETL_pipeline)  
